@@ -1,0 +1,14 @@
+.darkroom {
+	@extend %page;
+	word-break: break-all;
+
+	&--active {
+		@extend %page--active;
+	}
+}
+
+.darkroom__content {
+	@extend %cover;
+	@extend %content;
+	overflow: auto;
+}

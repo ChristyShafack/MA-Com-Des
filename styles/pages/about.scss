@@ -1,0 +1,15 @@
+.about {
+  @extend %page;
+  word-break: break-all;
+
+  &--active {
+    @extend %page--active;
+  }
+}
+
+.about__content {
+  @extend %cover;
+  @extend %content;
+  overflow: auto;
+}
+
