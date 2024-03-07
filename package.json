@@ -38,6 +38,7 @@
     "nodemon": "^2.0.7",
     "prismic-dom": "^2.2.4",
     "prismic-javascript": "^3.0.2",
+    "pug": "^3.0.0",
     "request": "^2.88.2",
     "staticify": "^5.0.0",
     "ua-parser-js": "^0.7.23"

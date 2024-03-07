@@ -18,15 +18,9 @@ app.get('/about', (request, response) => {
   response.render('pages/about')
 })
 
-
 // app.get('/projects/portraits', (request, response) => {
 //   response.render('projects/portraits')
 // })
-
-// app.get('/projects/darkroom', (request, response) => {
-//   response.render('projects/darkroom')
-// })
-
 
 app.use((request, response) => {
   response.status(404)

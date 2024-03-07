@@ -17,8 +17,6 @@ import Blogs from 'pages/Blogs'
 import Projects from 'pages/Projects'
 import Home from 'pages/Home'
 
-import Preloader from 'components/Preloader'
-
 class App {
   constructor () {
     if (IS_DEVELOPMENT && window.location.search.indexOf('fps') > -1) {
@@ -30,7 +28,6 @@ class App {
     this.content = document.querySelector('.content')
     this.template = this.content.dataset.template
 
-    this.createPreloader()
     this.pages = new Map()
     this.pages.set('darkroom', new Darkroom())
     this.pages.set('about', new About())
@@ -46,24 +43,12 @@ class App {
     this.addLinksEventsListeners()
   }
 
-  createPreloader () {
-    this.preloader = new Preloader()
-    this.preloader.on('complete', this.onPreloaded)
-  }
-
-  onPreloaded () {
-    this.onResize()
-
-    this.createAnalytics()
-
-    this.update()
-  }
-
   createAnalytics () {
     const googleAnalytics = document.createElement('script')
 
     googleAnalytics.onload = _ => {
       function gtag () {
+        // eslint-disable-next-line no-undef
         dataLayer.push(arguments)
       }
 

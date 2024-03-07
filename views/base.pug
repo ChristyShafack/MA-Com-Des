@@ -1,18 +1,16 @@
-mixin footer
-  section.footer
-    .footer__content
-      .footer__brand
-        p
-          a(href='/home') christy shafack Tamba
-      .footer__socials 
-        p
-          a(href='#') Facebook
-        p
-          a(href='#') Twitter
-        p
-          a(href='#') LinkedIn
-        p
-          a(href='#') Instagram
+//- mixin footer
+//-   section.footer
+//-     .footer__content
+//-       .footer__brand
+//-         p
+//-           a(href='/home') christy shafack Tamba
+//-       .footer__socials 
+//-         p
+//-           a(href='#') email
+//-         p
+//-           a(href='#') linkedIn
+//-         p
+//-           a(href='#') github
 
 block variables
 
@@ -55,8 +53,8 @@ if !isAJAX
         include ../public/main.css
 
     body
-      include ./partials/preloader
       include ./partials/navigation
+
       .content#content(data-template=template)
         block body
       include ./partials/noscript
