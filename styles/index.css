@@ -414,6 +414,7 @@ svg path {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #FFFCEC;
 }
 @media (max-width: 768px) {
   .menu-container {
