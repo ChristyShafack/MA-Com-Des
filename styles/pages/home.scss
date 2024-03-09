@@ -20,8 +20,8 @@
   align-items: center;
   gap: 1.5rem;
   
-  margin: 8rem auto;
-  line-height: 0.8;
+  margin: 7rem auto;
+  line-height: 0.9;
 
   @include media("<phone") {
     margin-top: 10rem;
@@ -47,7 +47,7 @@
   margin: 0 auto;
 
   @include media("<phone") {
-    margin-top: -7rem;
+    margin-top: -6rem;
   }
 }
 
@@ -94,6 +94,63 @@
 	width: 50%;
 	height: 1.5px;
 	background: $color-primary;
+}
+
+
+.aam203{
+  @extend %cover;
+  @extend %content;
+  background-color: $color-secondary;
+  color: $color-white !important;
+
+}
+
+.aam210{
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.pagination{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.page__link{
+  margin-top: 9rem;
+    
+  @include media("<phone") {
+    margin-top: 3.5rem;
+  }
+}
+
+.page__link:first-child{
+  @extend %link;
+  font-family: $font-boismen-regular;
+  color: $color-secondary;
+
+  font-size: 6rem;
+
+    
+  @include media("<phone") {
+    font-size: 2rem;
+  }
+  
+}
+
+.page__link:nth-child(2){
+  @extend %link--hidden;
+  font-family: $font-waicena;
+  color: $color-primary;
+  font-size: 8rem;
+  
+  @include media("<phone") {
+    font-size: 3rem;
+  }
+
 }
 
 .footer {

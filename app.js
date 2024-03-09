@@ -7,9 +7,19 @@ app.listen(app.get('PORT'), () => {})
 app.get('/', (request, response) => {
   response.render('pages/home')
 })
-app.get('/projects', (request, response) => {
-  response.render('pages/projects')
+
+app.get('/aam201', (request, response) => {
+  response.render('pages/aam201')
 })
+
+app.get('/aam203', (request, response) => {
+  response.render('pages/aam203')
+})
+
+app.get('/aam210', (request, response) => {
+  response.render('pages/aam210')
+})
+
 app.get('/blogs', (request, response) => {
   response.render('pages/blogs')
 })

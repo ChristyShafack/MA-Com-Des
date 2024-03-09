@@ -1,0 +1,33 @@
+extends ../base.pug
+
+block variables
+    - var template = 'aam203'
+
+block body
+    .aam203
+        .aam203__content
+            .home__heading 
+                h1 AAM203
+                h2 Applied Practice: Development & Reflection
+            .home__modules
+                .module
+                    img.module__link__img(src='/images/2.png')
+                    a.module__link(href='/semester1') SEMESTER 1
+                
+                .divider
+
+                .module
+                    img.module__link__img(src='/images/3.png')
+                    a.module__link(href='/semester2')  SEMESTER 2
+                
+                .divider
+            .pagination
+                .page__link 
+                    a(href='/') back 
+                .page__link 
+                    a(href='/aam210') AAM210
+                    
+
+        +footer                     
+
+
