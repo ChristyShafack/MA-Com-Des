@@ -23,6 +23,10 @@
   margin: 8rem auto;
   line-height: 0.8;
 
+  @include media("<phone") {
+    margin-top: 10rem;
+  }
+
   h1 {
     @extend %text-waicena;
     color: $color-primary;
@@ -41,6 +45,10 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+  @include media("<phone") {
+    margin-top: -7rem;
+  }
 }
 
 .module{
@@ -54,6 +62,10 @@
   font-family: $font-waicena;
   color: $color-secondary;
   font-size: 12rem;
+    
+  @include media("<phone") {
+    font-size: 5rem;
+  }
 }
 
 .module .module__link__img {
@@ -84,8 +96,6 @@
 	background: $color-primary;
 }
 
-// @include media("<phone") {}
-
 .footer {
   width: 100%;
   position: fixed;
@@ -98,6 +108,11 @@
   font-family: $font-boismen-regular;
   font-size: 4rem;
   color: $color-secondary;
+
+  @include media("<phone") {
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
 
 }
 
@@ -117,5 +132,9 @@
   a {
     font-family: $font-boismen-regular;
     @extend %link;
+  }
+
+  @include media("<phone"){
+    width: 100%;
   }
 }

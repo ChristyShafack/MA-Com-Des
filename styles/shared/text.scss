@@ -1,16 +1,30 @@
 %text-waicena{
   font-family: $font-waicena;
   font-size: 18rem;
+
+  @include media("<phone") {
+    font-size: 5rem;
+  }
+
 }
 
 %text-boismen-regular{
   font-family: $font-boismen-regular;
   font-size: 12rem;
+
+  @include media("<phone") {
+    font-size: 3rem;
+  }
 }
 
 %text-boismen-light{
   font-family: $font-boismen-light;
   font-size: 12rem;
+
+    
+  @include media("<phone") {
+    font-size: 3rem;
+  }
 }
 
 %text-manrope-regular{
