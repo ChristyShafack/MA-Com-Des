@@ -10,11 +10,9 @@ import each from 'lodash/each'
 
 import Detection from 'classes/Detection'
 
-
 import Darkroom from 'pages/Darkroom'
 import About from 'pages/About'
 import Blogs from 'pages/Blogs'
-import Projects from 'pages/Projects'
 import Home from 'pages/Home'
 
 class App {
@@ -32,7 +30,6 @@ class App {
     this.pages.set('darkroom', new Darkroom())
     this.pages.set('about', new About())
     this.pages.set('blogs', new Blogs())
-    this.pages.set('projects', new Projects())
     this.pages.set('home', new Home())
 
     this.page = this.pages.get(this.template)

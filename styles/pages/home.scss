@@ -7,28 +7,18 @@
   }
 }
 
-.home__content {
+.home__content,
+.aam201,
+.aam203,
+.aam210 {
   @extend %cover;
   @extend %content;
   overflow: auto;
 }
 
 .home__heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  
-  margin: 7rem auto;
-  line-height: 0.9;
-
-  @include media("<phone") {
-    margin-top: 10rem;
-  }
-
+  @extend %general__heading;
   h1 {
-    @extend %text-waicena;
     color: $color-primary;
   }
 
@@ -38,34 +28,27 @@
   }
 }
 
+.aam201{
+  background-color: #fcf0bf;
+}
+.aam203{
+  background-color: #ede0ac;
+}
+.aam210{
+  background-color: #f2e2a1;
+}
 
 .home__modules {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-
-  @include media("<phone") {
-    margin-top: -6rem;
-  }
+  @extend %general__modules;
 }
 
 .module{
-  display: flex;
-  justify-content: space-between;
-  height: 110px;
-  padding: 1em 0;
+ @extend  %general__module;
 }
 
 .module__link {
-  font-family: $font-waicena;
+  @extend %general__module__link;
   color: $color-secondary;
-  font-size: 12rem;
-    
-  @include media("<phone") {
-    font-size: 5rem;
-  }
 }
 
 .module .module__link__img {
@@ -79,7 +62,6 @@
 .module:hover .module__link__img{
   width: 120px;
   height: 100%;
-  color: $color-accent;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -91,32 +73,17 @@
 }
 
 .divider {
-	width: 50%;
-	height: 1.5px;
-	background: $color-primary;
+  width: 50%;
+  height: 1.5px;
+  background: $color-primary;
 }
-
-
-.aam203{
-  @extend %cover;
-  @extend %content;
-  background-color: $color-secondary;
-  color: $color-white !important;
-
-}
-
-.aam210{
-  background-color: $color-primary;
-  color: $color-white;
-}
-
+  
 .pagination{
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-
 }
 
 .page__link{
@@ -152,6 +119,8 @@
   }
 
 }
+
+
 
 .footer {
   width: 100%;

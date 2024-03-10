@@ -28,3 +28,58 @@
     height: 100%;
   }
   
+
+%general__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+    margin: 7rem auto;
+    line-height: 0.9;
+  
+    @include media("<phone") {
+      margin-top: 10rem;
+    }
+  
+    h1 {
+      @extend %text-waicena;
+    }
+  
+    h2 {
+      @extend %text-boismen-light;
+    }
+  }
+  
+  
+%general__modules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  
+    @include media("<phone") {
+      margin-top: -6rem;
+    }
+  }
+
+
+ %general__module{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    padding: 1em 0;
+  }
+  
+%general__module__link {
+    font-family: $font-waicena;
+    color: $color-secondary;
+    font-size: 12rem;
+      
+    @include media("<phone") {
+      font-size: 5rem;
+    }
+  }
+  
