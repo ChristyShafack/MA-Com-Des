@@ -4,11 +4,11 @@ export default class extends Page {
   constructor () {
     super({
       classes: {
-        active: 'darkroom--active'
+        active: 'semester1--active'
       },
-      element: '.darkroom',
+      element: '.semester1',
       elements: {
-        wrapper: '.darkroom__content'
+        wrapper: '.semester1__content'
       }
     })
   }

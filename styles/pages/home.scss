@@ -29,10 +29,10 @@
 }
 
 .aam201{
-  background-color: #fcf0bf;
+  background-color: #fff9e3;
 }
 .aam203{
-  background-color: #ede0ac;
+  background-color: #fef4ce;
 }
 .aam210{
   background-color: #f2e2a1;
@@ -79,20 +79,21 @@
 }
   
 .pagination{
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 
-.page__link{
-  margin-top: 9rem;
+.page__link {
+  margin: 9rem auto;
   vertical-align: middle;
   @include media("<phone") {
-    margin-top: 3.5rem;
+    margin: 3.5rem auto;
   }
 }
+
 
 .page__link:first-child{
   @extend %link;
@@ -100,7 +101,6 @@
   color: $color-secondary;
   font-size: 6rem;
 
-    
   @include media("<phone") {
     font-size: 2rem;
   }
@@ -113,9 +113,6 @@
   color: $color-primary;
   font-size: 8rem;
   line-height: 0.9;
-
-
-  
   @include media("<phone") {
     font-size: 3rem;
   }

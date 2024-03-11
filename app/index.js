@@ -10,9 +10,10 @@ import each from 'lodash/each'
 
 import Detection from 'classes/Detection'
 
-import Darkroom from 'pages/Darkroom'
+import Semester2 from 'pages/Semester2'
+import Semester1 from 'pages/Semester1'
 import About from 'pages/About'
-import Blogs from 'pages/Blogs'
+import Blog from 'pages/Blog'
 import Home from 'pages/Home'
 
 class App {
@@ -27,9 +28,10 @@ class App {
     this.template = this.content.dataset.template
 
     this.pages = new Map()
-    this.pages.set('darkroom', new Darkroom())
+    this.pages.set('semester2', new Semester2())
+    this.pages.set('semester1', new Semester1())
     this.pages.set('about', new About())
-    this.pages.set('blogs', new Blogs())
+    this.pages.set('blog', new Blog())
     this.pages.set('home', new Home())
 
     this.page = this.pages.get(this.template)

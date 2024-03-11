@@ -134,7 +134,7 @@
   .menu a {
     position: relative;
     top: 120px;
-    line-height: 70%;
+    line-height: 90%;
     text-decoration: none;
     color: $color-white;
     transition: letter-spacing 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -148,7 +148,7 @@
 
   .menu-item a{
     &:hover{
-      color: $color-accent;
+      color: #f2e2a1;
       letter-spacing: 0.05em;
     }
   }

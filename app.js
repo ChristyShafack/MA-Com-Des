@@ -8,29 +8,57 @@ app.get('/', (request, response) => {
   response.render('pages/home')
 })
 
+/* AAM201 */
 app.get('/aam201', (request, response) => {
   response.render('pages/aam201')
 })
 
+app.get('/aam201/semester1', (request, response) => {
+  response.render('aam201/semester1')
+})
+
+app.get('/aam201/semester2', (request, response) => {
+  response.render('aam201/semester2')
+})
+/******************************************************************/
+
+/* AAM203 */
 app.get('/aam203', (request, response) => {
   response.render('pages/aam203')
 })
 
+app.get('/aam203/semester1', (request, response) => {
+  response.render('aam203/semester1')
+})
+
+app.get('/aam203/semester2', (request, response) => {
+  response.render('aam203/semester2')
+})
+
+/******************************************************************/
+
+/* AAM203 */
 app.get('/aam210', (request, response) => {
   response.render('pages/aam210')
 })
 
-app.get('/blogs', (request, response) => {
-  response.render('pages/blogs')
+app.get('/aam210/semester1', (request, response) => {
+  response.render('aam210/semester1')
+})
+
+app.get('/aam210/semester2', (request, response) => {
+  response.render('aam210/semester2')
+})
+
+/******************************************************************/
+
+app.get('/blog', (request, response) => {
+  response.render('pages/blog')
 })
 
 app.get('/about', (request, response) => {
   response.render('pages/about')
 })
-
-// app.get('/projects/portraits', (request, response) => {
-//   response.render('projects/portraits')
-// })
 
 app.use((request, response) => {
   response.status(404)

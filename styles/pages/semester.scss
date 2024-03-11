@@ -1,0 +1,82 @@
+.semester1 {
+    @extend %page;
+    word-break: break-all;
+
+    &--active {
+        @extend %page--active;
+    }
+}
+
+.semester1__content {
+    @extend %cover;
+    @extend %content;
+    overflow: auto;
+}
+
+.semester1__heading {
+    @extend %general__heading;
+
+    h1 {
+        color: $color-primary;
+    }
+
+    h2 {
+        color: $color-secondary;
+    }
+}
+
+
+.semester1__portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 25rem;
+
+
+    @include media("<phone") {
+        gap: 5rem;
+    }
+}
+
+.semester__notes {
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @include media("<phone") {
+        max-width: 1000px;
+        margin: 0 2rem;
+    }
+}
+
+h3 {
+    font-family: $font-boismen-regular;
+    font-size: 15rem;
+    font-weight: 500;
+    color: $color-primary;
+
+    @include media("<phone") {
+        font-size: 3.5rem;
+    }
+}
+
+h4 {
+    font-size: 5rem;
+    color: $color-secondary;
+
+    @include media("<phone") {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    font-family: $font-manrope-regular;
+    font-size: 3.5rem;
+    word-break: keep-all;
+    color: $color-secondary;
+    text-align: justify;
+
+    @include media("<phone") {
+        font-size: 1.2rem;
+    }
+}
