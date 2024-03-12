@@ -18,7 +18,7 @@
 }
 
 .semester1__heading,
-.semester2__heading  {
+.semester2__heading {
     @extend %general__heading;
 
     h1 {
@@ -32,7 +32,7 @@
 
 
 .semester1__portfolio,
-.semester2__portfolio  {
+.semester2__portfolio {
     display: flex;
     flex-direction: column;
     gap: 25rem;
@@ -85,4 +85,28 @@ p {
     @include media("<phone") {
         font-size: 1.2rem;
     }
+}
+
+.readings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5rem;
+
+    @include media("<phone") {
+        gap: 1rem;
+    }
+}
+
+
+.reading {
+    img {
+        width: 150px;
+        object-fit: cover;
+
+        @include media("<phone") {
+            width: 75px;
+        }
+    }
+
 }
