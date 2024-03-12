@@ -158,6 +158,9 @@
     font-family: $font-boismen-regular;
     @extend %link;
   }
+  p {
+    font-family: $font-boismen-regular;
+  }
 
   @include media("<phone"){
     width: 100%;

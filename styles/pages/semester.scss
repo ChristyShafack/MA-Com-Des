@@ -1,4 +1,5 @@
-.semester1 {
+.semester1,
+.semester2 {
     @extend %page;
     word-break: break-all;
 
@@ -7,13 +8,17 @@
     }
 }
 
-.semester1__content {
+
+
+.semester1__content,
+.semester2__content {
     @extend %cover;
     @extend %content;
     overflow: auto;
 }
 
-.semester1__heading {
+.semester1__heading,
+.semester2__heading  {
     @extend %general__heading;
 
     h1 {
@@ -26,7 +31,8 @@
 }
 
 
-.semester1__portfolio {
+.semester1__portfolio,
+.semester2__portfolio  {
     display: flex;
     flex-direction: column;
     gap: 25rem;
