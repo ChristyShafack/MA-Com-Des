@@ -13,3 +13,13 @@
   overflow: auto;
 }
 
+.about__heading {
+  @extend %general__heading;
+  h1 {
+    color: $color-primary;
+  }
+}
+
+.about__section{
+  color: $color-secondary;
+}

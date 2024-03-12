@@ -32,7 +32,8 @@
 
 
 .semester1__portfolio,
-.semester2__portfolio {
+.semester2__portfolio,
+.about__sections {
     display: flex;
     flex-direction: column;
     gap: 25rem;
@@ -43,11 +44,14 @@
     }
 }
 
-.semester__notes {
+.semester__notes,
+.about__section {
     max-width: 950px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin: 0 15rem;
+
 
     @include media("<phone") {
         max-width: 1000px;
@@ -69,7 +73,6 @@ h3 {
 h4 {
     font-size: 5rem;
     color: $color-secondary;
-
     @include media("<phone") {
         font-size: 1.5rem;
     }
