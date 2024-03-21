@@ -1,10 +1,27 @@
 extends ../base.pug
 
 block variables
-    - var template = 'blogs'
+    - var template = 'blog'
 
 block body
-    .blogs
-        .blogs__content
-            
-            +footer 
+    .blog
+        .blog__content
+            .blog__heading 
+                h1 Reflective blog
+            .blog__sections
+                .blog__section
+                    h3 New beginnings~
+                    h4 ( 29th Sept. 2023 )
+                    p Contrary to popular belief, Lorem Ipsum is not simply random has roots in a piece
+                        | over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                        | up more obscure Latin words looked up from a lorem ipsum pa
+                    .blog__images 
+                        .blog__image
+                            img(src="/images/4.png" alt="")
+                        .blog__image
+                            img(src="/images/4.png" alt="")
+                        .blog__image
+                            img(src="/images/4.png" alt="")
+        +footer 
+
+

@@ -33,11 +33,11 @@
 
 .semester1__portfolio,
 .semester2__portfolio,
-.about__sections {
+.about__sections,
+.blog__sections{
     display: flex;
     flex-direction: column;
-    gap: 25rem;
-
+    gap: 20rem;
 
     @include media("<phone") {
         gap: 5rem;
@@ -45,7 +45,8 @@
 }
 
 .semester__notes,
-.about__section {
+.about__section,
+.blog__section{
     max-width: 950px;
     display: flex;
     flex-direction: column;
@@ -82,7 +83,7 @@ p {
     font-family: $font-manrope-regular;
     font-size: 3.5rem;
     word-break: keep-all;
-    color: $color-secondary;
+    color: $color-paragraph;
     text-align: justify;
 
     @include media("<phone") {
@@ -113,3 +114,13 @@ p {
     }
 
 }
+
+.pagination2{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 8rem auto;
+  }
+  

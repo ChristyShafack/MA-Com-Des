@@ -1,29 +1,29 @@
 // import gsap from 'gsap'
 // import { CSSRulePlugin } from 'gsap/all'
 
-// import Component from 'classes/Component'
+import Component from 'classes/Component'
 
-// export default class extends Component {
-//   constructor () {
-//     super({
-//       classes: {},
-//       element: '.navigation',
-//       elements: {}
-//     })
-//   }
+export default class extends Component {
+  constructor () {
+    super({
+      classes: {},
+      element: '.navigation',
+      elements: {}
+    })
+  }
 
-//   /**
-//    * Animations.
-//    */
-//   async show (url) {
-//     this.element.classList.add(this.classes.active)
+  /**
+   * Animations.
+   */
+  async show (url) {
+    this.element.classList.add(this.classes.active)
 
-//     return super.show(url)
-//   }
+    return super.show(url)
+  }
 
-//   async hide (url) {
-//     this.element.classList.remove(this.classes.active)
+  async hide (url) {
+    this.element.classList.remove(this.classes.active)
 
-//     return super.hide(url)
-//   }
-// }
+    return super.hide(url)
+  }
+}

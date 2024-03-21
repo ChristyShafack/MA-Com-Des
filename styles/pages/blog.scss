@@ -1,4 +1,4 @@
-.blogs {
+.blog {
   @extend %page;
   word-break: break-all;
 
@@ -7,9 +7,44 @@
   }
 }
 
-.blogs__content {
+.blog__content {
   @extend %cover;
   @extend %content;
   overflow: auto;
 }
 
+.blog__heading {
+  @extend %general__heading;
+
+  h1 {
+    color: $color-primary;
+  }
+}
+
+.blog__section{
+  color: $color-secondary;
+  margin-bottom: 10rem;
+}
+
+.blog__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5rem;
+  margin: 5rem auto;
+
+  @include media("<phone") {
+    gap: 1rem;
+  }
+}
+
+.blog__image {
+  img {
+    width: 400px;
+    object-fit: cover;
+
+    @include media("<phone") {
+      width: 200px;
+    }
+  }
+}

@@ -20,6 +20,8 @@
   }
 }
 
-.about__section{
+.about__section:last-child{
   color: $color-secondary;
+  margin-bottom: 10rem;
+  background-color: red;
 }

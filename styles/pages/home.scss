@@ -79,21 +79,21 @@
 }
   
 .pagination{
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 auto;
+  align-items: center;
+  margin: 3rem 0 auto;
 }
 
 .page__link {
-  margin: 9rem auto;
-  vertical-align: middle;
+  margin: 5rem auto;
+  padding: 0;
   @include media("<phone") {
     margin: 3.5rem auto;
   }
 }
-
 
 .page__link:first-child{
   @extend %link;
@@ -125,7 +125,7 @@
   width: 100%;
   position: fixed;
   bottom: 0;
-  margin: 0 auto;
+  margin: 15rem 0 auto;
   padding: 2rem 0 1rem 0;
 
   background-color: $color-footer;

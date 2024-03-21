@@ -1,5 +1,5 @@
 mixin footer
-  section.footer
+  .footer
     .footer__content
       .footer__socials 
         .socials 
@@ -9,7 +9,7 @@ mixin footer
         .socials 
           a(href='#') github
         .socials 
-          p ©2024 
+          a(href='#') ©2024 
 
 block variables
 
@@ -66,5 +66,7 @@ else
       title christy shafack
 
     body
+      include ./partials/navigation
+      
       .content#content(data-template=template)
         block body
