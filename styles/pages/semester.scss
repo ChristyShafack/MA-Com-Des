@@ -34,7 +34,7 @@
 .semester1__portfolio,
 .semester2__portfolio,
 .about__sections,
-.blog__sections{
+.blog__sections {
     display: flex;
     flex-direction: column;
     gap: 20rem;
@@ -46,7 +46,7 @@
 
 .semester__notes,
 .about__section,
-.blog__section{
+.blog__section {
     max-width: 950px;
     display: flex;
     flex-direction: column;
@@ -74,8 +74,22 @@ h3 {
 h4 {
     font-size: 5rem;
     color: $color-secondary;
+
     @include media("<phone") {
         font-size: 1.5rem;
+    }
+}
+
+h5 {
+
+    font-family: $font-boismen-regular;
+    font-size: 10rem;
+    color: $color-secondary;
+    margin: 4rem 0;
+
+    @include media("<phone") {
+        font-size: 3.5rem;
+        margin: 2rem 0;
     }
 }
 
@@ -95,7 +109,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 5rem;
+    gap: 6rem;
 
     @include media("<phone") {
         gap: 1rem;
@@ -115,12 +129,11 @@ p {
 
 }
 
-.pagination2{
+.pagination2 {
     width: 100%;
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 8rem auto;
-  }
-  
+}
