@@ -5,6 +5,7 @@
   &--active {
     @extend %page--active;
   }
+  background-color: aliceblue;
 }
 
 .blog__content {
@@ -22,8 +23,24 @@
 }
 
 .blog__section{
-  color: $color-secondary;
-  margin-bottom: 10rem;
+
+  margin-bottom: 15rem;
+
+  h3{
+    color: $color-secondary;
+  }
+
+  p { 
+    line-height: 2;
+    margin-bottom: 6rem;
+    @include media("<phone") {
+      margin-bottom: 3rem;
+    }
+  }
+
+  @include media("<phone") {
+    margin-bottom: 4rem;
+  }
 }
 
 .blog__images {
@@ -31,7 +48,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 5rem;
-  margin: 5rem auto;
+  margin: 4rem auto;
 
   @include media("<phone") {
     gap: 1rem;
@@ -40,11 +57,11 @@
 
 .blog__image {
   img {
-    width: 400px;
+    width: 1000px;
     object-fit: cover;
 
     @include media("<phone") {
-      width: 200px;
+      width: 500px;
     }
   }
 }
